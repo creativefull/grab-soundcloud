@@ -39,6 +39,3 @@ soundcloud.getAuthorDetail('URL PLAYLIST', function(err, doc) {
   console.log(doc);
 });
 ```
-
-Contributor
-@creativefull
