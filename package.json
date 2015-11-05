@@ -1,0 +1,24 @@
+{
+  "name": "grab-soundcloud",
+  "version": "1.1.0",
+  "description": "TO GET ALL DESCRIPTION FROM URL SONG ON SOUNDCLOUD",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"notest\" && exit 1;"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/creativefull/grab-soundcloud.git"
+  },
+  "keywords": [
+    "soundcloud"
+  ],
+  "author": "Shodiqul Muzaki <mshodiqul@gmail.com> (http://creativefull.cf)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/creativefull/grab-soundcloud/issues"
+  },
+  "homepage": "https://github.com/creativefull/grab-soundcloud#readme"
+}
