@@ -5,6 +5,9 @@ module.exports = {
 	getTrackDetail : function(url, cb) {
 		var gabungan = 'https://api.soundcloud.com/resolve.json?url=' + url + '&client_id=' + conf.api_key;
 		request({url : gabungan, json : true}, function (err, response, body) {
+			if (err) {
+				return cb('Error Get Url', null);
+			})
 			if (!body.errors) {
 				if (body.kind == 'track') {
 					return cb(null, body);
@@ -21,6 +24,9 @@ module.exports = {
 	getPlaylistDetail : function(url, cb) {
 		var gabungan = 'https://api.soundcloud.com/resolve.json?url=' + url + '&client_id=' + conf.api_key;
 		request({url : gabungan, json : true}, function (err, response, body) {
+			if (err) {
+				return cb('Error Get Url', null);
+			})
 			if (!body.errors) {
 				if (body.kind == 'playlist') {
 					return cb(null, body);
@@ -51,6 +57,9 @@ module.exports = {
 	getAuthorDetail : function(url, cb) {
 		var gabungan = 'https://api.soundcloud.com/resolve.json?url=' + url + '&client_id=' + conf.api_key;
 		request({url : gabungan, json : true}, function (err, response, body) {
+			if (err) {
+				return cb('Error Get Url', null);
+			})
 			if (!body.errors) {
 				if (body.kind == 'user') {
 					return cb(null, body);
