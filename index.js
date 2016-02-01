@@ -7,7 +7,7 @@ module.exports = {
 		request({url : gabungan, json : true}, function (err, response, body) {
 			if (err) {
 				return cb('Error Get Url', null);
-			})
+			}
 			if (!body.errors) {
 				if (body.kind == 'track') {
 					return cb(null, body);
@@ -26,7 +26,7 @@ module.exports = {
 		request({url : gabungan, json : true}, function (err, response, body) {
 			if (err) {
 				return cb('Error Get Url', null);
-			})
+			}
 			if (!body.errors) {
 				if (body.kind == 'playlist') {
 					return cb(null, body);
@@ -59,7 +59,7 @@ module.exports = {
 		request({url : gabungan, json : true}, function (err, response, body) {
 			if (err) {
 				return cb('Error Get Url', null);
-			})
+			}
 			if (!body.errors) {
 				if (body.kind == 'user') {
 					return cb(null, body);
