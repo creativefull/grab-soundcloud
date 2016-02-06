@@ -39,3 +39,8 @@ soundcloud.getAuthorDetail('URL PLAYLIST', function(err, doc) {
   console.log(doc);
 });
 ```
+Get Url Download
+```
+soundcloud.urlDownload('URL SONG', function(err, doc) {
+	console.log(doc);
+})
