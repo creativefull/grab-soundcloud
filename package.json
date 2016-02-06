@@ -1,6 +1,6 @@
 {
   "name": "grab-soundcloud",
-  "version": "1.8.0",
+  "version": "2.0.0",
   "description": "TO GET ALL DESCRIPTION FROM URL SONG ON SOUNDCLOUD",
   "main": "index.js",
   "dependencies": {
